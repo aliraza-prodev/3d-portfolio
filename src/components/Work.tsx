@@ -1,36 +1,27 @@
 import { useState, useCallback } from "react";
 import "./styles/Work.css";
-import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "Prism Platform",
+    category: "Business Intelligence & Data Preparation",
+    tools: "Data Pipelines, Data Transformation, Analytics Workflows",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "Car Marketplace System",
+    category: "Laravel + React Hybrid Application",
+    tools: "REST APIs, Payment Integration, Authentication, Performance Tuning",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
+    title: "Legacy to Laravel MVC",
+    category: "Enterprise Backend Modernization",
+    tools: "PHP Refactoring, Laravel MVC, Maintainable Architecture",
   },
   {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "Community Forum Platform",
+    category: "Stack Overflow-Style Q&A Application",
+    tools: "PHP, Bootstrap, Question Threads, Comments, Community Interaction",
   },
 ];
 
@@ -111,13 +102,6 @@ const Work = () => {
                           <p>{project.tools}</p>
                         </div>
                       </div>
-                    </div>
-                    <div className="carousel-image-wrapper">
-                      <WorkImage
-                        image={project.image}
-                        alt={project.title}
-                        link={project.link}
-                      />
                     </div>
                   </div>
                 </div>

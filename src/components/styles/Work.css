@@ -50,15 +50,17 @@
 .carousel-content {
   display: flex;
   align-items: center;
-  gap: 60px;
+  justify-content: center;
   width: 100%;
 }
 
 .carousel-info {
-  flex: 1;
+  max-width: 780px;
   display: flex;
-  gap: 30px;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  text-align: center;
 }
 
 .carousel-number h3 {
@@ -73,6 +75,8 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: center;
+  text-align: center;
 }
 
 .carousel-details h4 {
@@ -90,6 +94,7 @@
 
 .carousel-tools {
   margin-top: 16px;
+  text-align: center;
 }
 
 .carousel-tools .tools-label {
@@ -105,13 +110,6 @@
   color: #adacac;
   margin: 6px 0 0;
   font-size: 15px;
-}
-
-.carousel-image-wrapper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* ── Navigation Arrows ── */
@@ -257,10 +255,6 @@
     font-size: 45px;
   }
 
-  .carousel-content {
-    gap: 40px;
-  }
-
   .carousel-arrow-left {
     left: 10px;
   }
@@ -271,16 +265,7 @@
 }
 
 @media only screen and (max-width: 1025px) {
-  .carousel-content {
-    flex-direction: column;
-    gap: 30px;
-  }
-
   .carousel-info {
-    width: 100%;
-  }
-
-  .carousel-image-wrapper {
     width: 100%;
   }
 
@@ -317,15 +302,7 @@
     font-size: 20px;
   }
 
-  .carousel-content {
-    gap: 20px;
-  }
-
   .carousel-slide {
     padding: 30px 0;
-  }
-
-  .work-image img {
-    max-height: 250px;
   }
 }
